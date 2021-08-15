@@ -1,0 +1,417 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+body{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    align-items: center;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+nav .instagram{
+    height: 42px;
+    width: 115px;
+}
+
+nav .instagram:hover{
+    cursor: pointer;
+}
+
+.search{
+    width: 195px;
+    height: 28px;
+    border: 1px solid #DBDBDB;
+    background-color: #FAFAFA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ico-search img{
+    margin-right: 2px;
+    width: 11px;
+}
+
+
+.search span input{
+    width: 45px;
+    padding: 1px 2px;
+    background-color: #d3121200;
+    border: none;
+    color: #000000;
+}
+
+input::placeholder{
+    color: #B1B3B5;
+}
+
+input:focus{
+    outline: none;
+}
+
+.icons ul{
+    display: flex;
+}
+
+.icons ul li{
+    margin: 0 7px;
+    list-style: none;
+}
+
+.icons ul li:hover{
+    cursor:pointer
+}
+
+.icons ul li img{
+    width: 24px;
+}
+
+.profile-around{
+    border-radius: 50%;
+    width: 22px;
+    border: 1px solid #000;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.profile-info .img-user{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #DBDBDB;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.data-info{
+    display: flex;
+    height: 190px;
+    flex-direction: column;
+    margin-left: 40px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.user{
+    height: 40px;
+}
+
+.user ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user ul li{
+    margin: 0 5px;
+}
+
+.user ul li p{
+    font-size: 30px;
+}
+
+.user ul li button{
+    padding: 6px;
+    background-color: #00000000;
+    border: 1px solid #B1B3B5;
+    border-radius: 4px;
+}
+
+.user ul li button:hover{
+    cursor: pointer;
+}
+
+.user .gear{
+    width: 25px;
+    height: 25px
+}
+
+.user .gear:hover{
+    cursor: pointer;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers ul li{
+    margin: 0 10px;
+}
+
+.numbers span{
+    font-weight: bold;
+}
+
+.n-s-name{
+    font-weight: bold;
+}
+
+.states{
+    width: 80vh;
+    margin: 0 auto;
+}
+
+.states-card{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 24px 0 62px 0;
+}
+
+.states-card:hover{
+    cursor: pointer;
+}
+
+.states-card img{
+    width: 87px;
+}
+
+.states-card p{
+    font-weight: bold;
+}
+
+.sections{
+    position: relative;
+    min-width: 94vh;
+    margin: 0 auto;
+    border-top: 1px solid #d0d0d0;
+}
+
+.sections ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 19px 0 3px 0;
+}
+
+.sections ul li img{
+    width: 14px;
+}
+
+.sections ul li p{
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.sections ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections ul li:hover{
+    cursor: pointer;
+}
+
+.color-gray{
+    color: #b6b6b6;
+    font-weight: bold;
+}
+
+.hola-2{
+    position: absolute;
+    top: -1px;
+    left: 108px;
+    width: 14%;
+    border-top: 1px solid #000;
+    z-index: 20;
+}
+
+.pictures{
+    max-width: 100vh;
+    margin: 0 auto;
+    height: max-content;
+}
+
+.pictures-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture-card{
+    width: 283px;
+    height: 283px;
+    margin: 14px 12px;
+}
+
+
+.picture-card:hover{
+    cursor: pointer;
+}
+
+.pc-1{
+    background: url(/public/assets/pictures/1.png);
+}
+.pc-2{
+    background: url(/public/assets/pictures/2.png);
+}
+.pc-3{
+    background: url(/public/assets/pictures/3.png);
+}
+.pc-4{
+    background: url(/public/assets/pictures/4.png);
+}
+.pc-5{
+    background: url(/public/assets/pictures/5.png);
+}
+.pc-6{
+    background: url(/public/assets/pictures/6.png);
+}
+.pc-7{
+    background: url(/public/assets/pictures/7.png);
+}
+.pc-8{
+    background: url(/public/assets/pictures/8.png);
+}
+.pc-9{
+    background: url(/public/assets/pictures/9.png);
+}
+.pc-10{
+    background: url(/public/assets/pictures/10.png);
+}
+.pc-11{
+    background: url(/public/assets/pictures/11.png);
+}
+.pc-12{
+    background: url(/public/assets/pictures/12.png);
+}
+.pc-13{
+    background: url(/public/assets/pictures/13.png);
+}
+.pc-14{
+    background: url(/public/assets/pictures/14.png);
+}
+.pc-15{
+    background: url(/public/assets/pictures/15.png);
+}
+.pc-16{
+    background: url(/public/assets/pictures/16.png);
+}
+.pc-17{
+    background: url(/public/assets/pictures/17.png);
+}
+.pc-18{
+    background: url(/public/assets/pictures/18.png);
+}
+.pc-19{
+    background: url(/public/assets/pictures/19.png);
+}
+.pc-20{
+    background: url(/public/assets/pictures/20.png);
+}
+.pc-21{
+    background: url(/public/assets/pictures/21.png);
+}
+.pc-22{
+    background: url(/public/assets/pictures/22.png);
+}
+.pc-23{
+    background: url(/public/assets/pictures/23.png);
+}
+.pc-24{
+    background: url(/public/assets/pictures/24.png);
+}
+.pc-25{
+    background: url(/public/assets/pictures/25.png);
+}
+.pc-26{
+    background: url(/public/assets/pictures/26.png);
+}
+.pc-27{
+    background: url(/public/assets/pictures/27.png);
+}
+.pc-28{
+    background: url(/public/assets/pictures/28.png);
+}
+.pc-29{
+    background: url(/public/assets/pictures/29.png);
+}
+.pc-30{
+    background: url(/public/assets/pictures/30.png);
+}
+.pc-31{
+    background: url(/public/assets/pictures/31.png);
+}
+.pc-32{
+    background: url(/public/assets/pictures/32.png);
+}
+.pc-33{
+    background: url(/public/assets/pictures/33.png);
+}
+.pc-34{
+    background: url(/public/assets/pictures/34.png);
+}
+.pc-35{
+    background: url(/public/assets/pictures/35.png);
+}
+.pc-36{
+    background: url(/public/assets/pictures/36.png);
+}
+
+.picture-card img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    max-width: 80vh;
+    margin: 0 auto;
+    color: #919191;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+ul li{
+    margin: 0 10px;
+}
+
+footer ul li img{
+    width: 8px;
+}
