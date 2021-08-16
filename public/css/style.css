@@ -92,6 +92,9 @@ input:focus{
 section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .profile-info{
@@ -208,8 +211,8 @@ section{
 }
 
 .sections{
-    position: relative;
-    min-width: 94vh;
+    /* position: relative; */
+    width: 48%;
     margin: 0 auto;
     border-top: 1px solid #d0d0d0;
 }
@@ -254,27 +257,6 @@ section{
     border-top: 1px solid #000;
     z-index: 20;
 }
-
-.pictures{
-    max-width: 100vh;
-    margin: 0 auto;
-    height: max-content;
-}
-
-.pictures-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.picture-card{
-    width: 283px;
-    height: 283px;
-    margin: 14px 12px;
-}
-
 
 .picture-card:hover{
     cursor: pointer;
@@ -389,10 +371,34 @@ section{
     background: url(/public/assets/pictures/36.png);
 }
 
-.picture-card img{
-    background-size: cover;
+.picture-card{
+    background-size: contain;
     background-repeat: no-repeat;
 }
+
+.pictures{
+    max-width: 100vh;
+    margin: 0 auto;
+    height: max-content;
+}
+
+.pictures-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture-card{
+    width: 283px;
+    height: 283px;
+    margin: 14px 12px;
+}
+
 
 footer{
     max-width: 80vh;
@@ -414,4 +420,41 @@ ul li{
 
 footer ul li img{
     width: 8px;
+}
+
+
+@media screen and (max-width: 1366px) {
+
+    .sections{
+        /* position: relative; */
+        width: 95%;
+        margin: 0 0 20px 0;
+    }
+    
+
+    .pictures-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .picture-card{
+        width: 220px;
+        height: 220px;
+        margin: 0 5px 10px 0; 
+    }
+}
+
+
+@media screen and (max-width: 1366px) {
+
+    .pictures-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .picture-card{
+        width: 220px;
+        height: 220px;
+        margin: 0;
+    }
 }
